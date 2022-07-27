@@ -33,7 +33,10 @@ Download extensions:
 In order to get tailwind specific autocomplete, do not use tab or enter completion before list of tailwind classes suggestions pops up
 
 ### Not working:
-![autocomplete_not_working](./readme_resources/autocomplete_tailwind_not_working.png)
+
+(See the light highlight - you do **not** want this) 
+
+<img alt="not working" src="./readme_resources/autocomplete_tailwind_not_working.png" width="200"/>
 
 ### Working:
-![autocomplete_working](./readme_resources/autocomplete_tailwind_working.png)
+<img alt="working" src="./readme_resources/autocomplete_tailwind_working.png" width="500"/>
