@@ -41,6 +41,26 @@ In order to get tailwind specific autocomplete, do not use tab or enter completi
 ### Working:
 <img alt="working" src="./readme_resources/autocomplete_tailwind_working.png" width="500"/>
 
+## Emmet code generation
+
+Emmet allows to generate markups using css selector like syntax. To set it up, You need to include following settings to your editor's `settings.json` file. To acces it go to: <kbd>CTRL+SHIFT+P</kbd> > Open Settings (JSON)
+
+```json
+{
+    "tailwindCSS.emmetCompletions": true,
+    "emmet.includeLanguages": {"javascript": "javascriptreact"}
+}
+```
+To generate code specify an element, and chain classes using dot operator. You can chain multiple classes, as well as use quantity specifiers.
+
+Once You finished, press <kbd>TAB</kbd> to generate. 
+
+<img alt="emmet_source" src="./readme_resources/emmet_source.png" width="500"/>
+
+### Result:
+
+<img alt="emmet_outcome" src="./readme_resources/emmet_outcome.png" width="300"/>
+
 ## Technologies
 * Node.js
 * React
