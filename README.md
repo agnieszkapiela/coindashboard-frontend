@@ -40,3 +40,39 @@ In order to get tailwind specific autocomplete, do not use tab or enter completi
 
 ### Working:
 <img alt="working" src="./readme_resources/autocomplete_tailwind_working.png" width="500"/>
+
+## Technologies
+* Node.js
+* React
+* Tailwind CSS
+* **TODO**: add other technologies as needed (eg. test frameworks, ui kits)
+
+## About Tailwind CSS
+
+### Resources
+**Warning** do **not** use "tailwindui" as it's not free!
+
+* [Free ui kits repository(click)](https://www.tailwindawesome.com/?price=free), always remember to check license! Make sure it's **MIT**.
+* [Install Tailwind with React](https://tailwindcss.com/docs/guides/create-react-app)
+* [Tailwind's creator YT channel](https://www.youtube.com/c/TailwindLabs/about)
+
+### Example UI Kits
+* [Kometa UI](https://kitwind.io/products/kometa/)
+* [Kutty](https://kutty.netlify.app/)
+* [Flowbite](https://flowbite.com/)
+* [Preline](https://preline.co/index.html)
+* [Hyper UI](https://www.hyperui.dev/)
+* [Tailblocks](https://tailblocks.cc/)
+* [Meraki UI](https://merakiui.com/components/)
+* [Tailwind Kit](https://www.tailwind-kit.com/)
+
+## How to use components
+
+When adding new component or library, add it to the [used technologies](#technologies) section with it's license (again, it should be MIT). License often can be found on Github repo or in footer/header/about sections of project's website.
+
+### HTML
+First, convert HTML to JSX. You can use a website, for exampe [Click](https://transform.tools/html-to-jsx) or use "Html to JSX" VS Code plugin. Then create new file for the component and wrap it into class or function like you would do with your own HTML.  For additional safety you can wrap the whole code in `<> ... </>` if there isn't one root element in the kit's code. **Do not paste it in inside long markup** as it would drastically reduce code readibility. Always create new component in a separate file.
+
+### React
+As components are already created, you only need to add the library to dependencies using `npm install` command. Sometimes you will need add a plugin in the `tailwind.config.js` file. Always follow specific documentation. Examples: [HeadlessUI](https://github.com/tailwindlabs/headlessui) and [Flowbite-react](https://flowbite-react.com/).
+
