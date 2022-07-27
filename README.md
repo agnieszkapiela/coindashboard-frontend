@@ -30,6 +30,10 @@ Download extensions:
 * Tailwind CSS IntelliSense
 * Tailwind Docs
 
-Enable Settings > Quick Sugestions > String
+In order to get tailwind specific autocomplete, do not use tab or enter completion before list of tailwind classes suggestions pops up
 
-![quickSuggestions](./readme_resources/quickSuggestions.png)
+### Not working:
+![autocomplete_not_working](./readme_resources/autocomplete_tailwind_not_working.png)
+
+### Working:
+![autocomplete_working](./readme_resources/autocomplete_tailwind_working.png)
