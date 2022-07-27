@@ -12,7 +12,6 @@ Verify using command:
 > node -v
 v16.16.0
 ```
-## 
 
 ### Clone the repository
 ```bash
@@ -25,3 +24,12 @@ v16.16.0
 > npm install
 > npm run start
 ```
+## Editor setup (VS Code)
+
+Download extensions:
+* Tailwind CSS IntelliSense
+* Tailwind Docs
+
+Enable Settings > Quick Sugestions > String
+
+![quickSuggestions](./readme_resources/quickSuggestions.png)
