@@ -61,6 +61,10 @@ Once You finished, press <kbd>TAB</kbd> to generate.
 
 <img alt="emmet_outcome" src="./readme_resources/emmet_outcome.png" width="300"/>
 
+## Automatic tailwind classes sorting
+
+Install `Headwind` VS Code plugin and formatting will occur automaticly on file save.
+
 ## Technologies
 * Node.js
 * React
