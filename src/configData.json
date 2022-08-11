@@ -1,5 +1,6 @@
 {
-    "BASE_SERVER_URL": "https://api.coingecko.com/api/v3",
-    "BITCOIN_EXCHANGE_PATH": "/exchange_rates",
-    "PING_PATH": "/ping"
+    "BASE_SERVER_URL": "SERVER URL",
+    "COINS_PATH": "/api/coins",
+    "CHART_PATH": "/chart",
+    "MARKETDATA_PATH": "/marketdata"
 }

@@ -1,34 +1,31 @@
-import {useState, useEffect} from "react";
-import axios from "axios";
+import { useState, useEffect } from "react"
+import axios from "axios"
 import configData from "./../configData.json"
 
 const axiosClient = axios.create({
     baseURL: configData.BASE_SERVER_URL
 })
 
-const useFetchDataApi = (url)=>{
-    
-    const [data, setData] = useState()
-    const [status,setStatus] = useState("")
+const useFetchDataApi = (path, params = {}) => {
+    const [data, setData] = useState(null)
+    const [status, setStatus] = useState(102)
     const [loader, setLoader] = useState(true)
 
     useEffect(() => {
-
-        (async function (){
-            try{
-                const response = await axiosClient.get(url)
+        ;(async function () {
+            try {
+                const response = await axiosClient.get(path, { params: params })
                 setStatus(response.status)
-                setData(response.data);
-            }catch(error){
+                setData(response.data)
+            } catch (error) {
                 setStatus(error)
-            }finally{
+            } finally {
                 setLoader(false)
             }
         })()
+    }, [path, params])
 
-    },[url])
-    
-    return [status,loader,data]
+    return [status, loader, data]
 }
 
 export default useFetchDataApi
