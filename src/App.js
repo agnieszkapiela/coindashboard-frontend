@@ -10,6 +10,7 @@ function App() {
                 <h1>Coindashboard</h1>
             </header>
             <main>
+                <CoinInfo />
                 <ListCoinsInfo />
             </main>
         </>
