@@ -1,62 +1,43 @@
 import React from "react"
 import configData from "../../configData.json"
+import BtcImg from "../../img/bitcoin.png"
+import CoinImage from "../CoinImage/CoinImage"
 
-function CoinInfo({ name }) {
+function CoinInfo({ data }) {
     // const [status, loader, data] = useFetchDataApi(
     //     configData.COINS_PATH + "/" + name
     // )
 
     return (
-        <div>
-            <section className="bg-gray-900">
-                <div className="max-w-screen-xl px-4 py-12 mx-auto md:py-16 sm:px-6 lg:px-8">
-                    <div className="max-w-3xl mx-auto text-center">
-                        <h2 className="text-3xl font-bold text-white sm:text-4xl">
-                            Trusted by eCommerce Businesses
-                        </h2>
-
-                        <p className="mt-4 text-gray-500 sm:text-xl">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Ratione dolores laborum labore provident
-                            impedit esse recusandae facere libero harum sequi.
-                        </p>
-                    </div>
-
-                    <div className="mt-8 sm:mt-12">
-                        <dl className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-                            <div className="flex flex-col px-4 py-8 text-center border border-gray-800 rounded-lg">
-                                <dt className="order-last text-lg font-medium text-gray-500">
-                                    Total Sales
-                                </dt>
-
-                                <dd className="text-4xl font-extrabold text-blue-600 md:text-5xl">
-                                    $4.8m
-                                </dd>
-                            </div>
-
-                            <div className="flex flex-col px-4 py-8 text-center border border-gray-800 rounded-lg">
-                                <dt className="order-last text-lg font-medium text-gray-500">
-                                    Offical Addons
-                                </dt>
-
-                                <dd className="text-4xl font-extrabold text-blue-600 md:text-5xl">
-                                    24
-                                </dd>
-                            </div>
-
-                            <div className="flex flex-col px-4 py-8 text-center border border-gray-800 rounded-lg">
-                                <dt className="order-last text-lg font-medium text-gray-500">
-                                    Total Addons
-                                </dt>
-
-                                <dd className="text-4xl font-extrabold text-blue-600 md:text-5xl">
-                                    86
-                                </dd>
-                            </div>
-                        </dl>
+        <div className="flex flex-col justify-center items-center border dark:border-gray-600 bg-white dark:bg-gray-800 p-4">
+            <div className="flex-row gap-4 flex justify-center items-center">
+                <CoinImage urlImage={data.image_url} />
+                <div className=" flex flex-col">
+                    <span className="text-gray-600 dark:text-white text-lg font-medium">
+                        {data.name} ({data.symbol.toUpperCase()})
+                    </span>
+                    <div className="text-gray-400 text-xs">
+                        {data.description}
+                        <br />
+                        <div className="flex-row mt-2 gap-4 text-xs">
+                            <a
+                                href={data.links[0].url}
+                                target="_blink"
+                                className="mr-2"
+                            >
+                                {data.links[0].title}
+                            </a>
+                            <a
+                                href={data.links[1].url}
+                                target="_blink"
+                                className="mr-2"
+                            >
+                                {data.links[1].title}
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
     )
 }

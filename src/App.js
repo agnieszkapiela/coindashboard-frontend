@@ -1,17 +1,17 @@
-import CoinInfo from "./components/CoinInfo/CoinInfo"
-import useFetchDataApi from "./customizedhooks/useFetchDataApi"
-import configData from "./configData.json"
-import ListCoinsInfo from "./components/ListCoinsInfo/ListCoinsInfo"
+import Home from "./components/Home/Home"
+import Dashbord from "./components/Dashbord/Dashbord"
 
 function App() {
     return (
         <>
-            <header className="px-8 py-4 text-xl font-semibold shadow-sm">
-                <h1>Coindashboard</h1>
+            <header className="px-8 py-4 text-xl font-semibold border-b dark:border-gray-600 shadow-sm dark:bg-gray-800 dark:text-white">
+                <h1>
+                    C<span className="text-red-600">Dashboard</span>
+                </h1>
             </header>
             <main>
-                <CoinInfo />
-                <ListCoinsInfo />
+                <Home />
+                <Dashbord />
             </main>
         </>
     )

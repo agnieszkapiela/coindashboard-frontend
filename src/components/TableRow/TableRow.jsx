@@ -1,13 +1,20 @@
 import React from "react"
+import CoinImage from "../CoinImage/CoinImage"
 
-function TableRow({ id, name, surname, code }) {
+function TableRow({ name, token, price, urlImage, alt }) {
     return (
-        <tr class="text-gray-700">
-            <td class="border-b-2 p-4 dark:border-dark-5">{id}</td>
-            <td class="border-b-2 p-4 dark:border-dark-5">{name}</td>
-            <td class="border-b-2 p-4 dark:border-dark-5">{surname}</td>
-            <td class="border-b-2 p-4 dark:border-dark-5">{code}</td>
-        </tr>
+        <div className="flex items-center mb-2 pb-2 dark:border-gray-600 justify-between border-b">
+            <CoinImage urlImage={urlImage} alt={alt} ratioChange={false} />
+            <div className="flex items-center w-full justify-between">
+                <div className="flex text-sm flex-col w-full ml-2 items-start justify-between">
+                    <p className="dark:text-white">{name}</p>
+                    <p className="text-gray-300">
+                        {token ? "Contract Address" : "Not Token"}
+                    </p>
+                </div>
+                <span className="text-green-400">{price}$</span>
+            </div>
+        </div>
     )
 }
 
