@@ -1,6 +1,5 @@
 import React from "react"
 import configData from "../../configData.json"
-import BtcImg from "../../img/bitcoin.png"
 import CoinImage from "../CoinImage/CoinImage"
 
 function CoinInfo({ data }) {
