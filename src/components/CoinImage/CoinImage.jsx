@@ -1,15 +1,15 @@
 import React from "react"
 
-function CoinImage({ urlImage, alt, ratioChange = true }) {
+function CoinImage({ urlImage, alt, ratioChange = false }) {
     let height = "h-16"
     let width = "h-16"
-    if (ratioChange !== true) {
+    if (ratioChange !== false) {
         height = "h-8"
         width = "h-8"
     }
     return (
         <div className="flex-shrink-0">
-            <a href="#" className="block relative">
+            <span className="block relative">
                 <img
                     alt={alt}
                     src={urlImage}
@@ -20,7 +20,7 @@ function CoinImage({ urlImage, alt, ratioChange = true }) {
                         width
                     }
                 />
-            </a>
+            </span>
         </div>
     )
 }

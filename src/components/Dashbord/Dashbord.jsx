@@ -1,12 +1,16 @@
 import React from "react"
 import CoinInfo from "../CoinInfo/CoinInfo"
 import ChartCoin from "../Chart/ChartCoin"
-import ListCoinsInfo from "../ListCoinsInfo/ListCoinsInfo"
 import CoinMarketData from "../CoinMarketData/CoinMarketData"
 
 import { COIN_DETAILS, COIN_MARKET_DATA, PRICES } from "../../data"
+import ListCoinInfo from "../ListCoinInfo/ListCoinInfo"
 
-function Dashbord() {
+function Dashbord({ coinName }) {
+    console.log(coinName)
+    // do the API call using ---- /api/coins/coinName
+    // do the API call for the Chart component using ---- /api/coins/coinName/chart
+    // do the API call for the coin market using ---- /api/coins/coinName/marketdata
     return (
         <main
             id="dashboard"
@@ -21,7 +25,7 @@ function Dashbord() {
             </div>
             <div>
                 <CoinInfo data={COIN_DETAILS} />
-                <ListCoinsInfo />
+                <ListCoinInfo />
             </div>
         </main>
     )
