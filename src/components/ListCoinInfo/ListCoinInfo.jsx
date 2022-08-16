@@ -12,7 +12,7 @@ function ListCoinInfo({ data }) {
                         Details
                     </p>
                 </div>
-                <div className="overflow-y-scroll h-80 px-1">
+                <div className="overflow-y-scroll h-72 pb-4 px-1">
                     <ListCoinInfoRow name="Market Cap Rank" display={1} />
                     <ListCoinInfoRow
                         name="Market Cap Dominance"

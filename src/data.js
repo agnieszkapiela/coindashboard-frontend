@@ -3,17 +3,29 @@
  * PATH: api/coins/{name}/marketdata
  */
 
-const DELTA = {
-    interval: [0.01, -0.02, -0.03, 0.09, 0.44], // Array of String %
+const DELTA_1H = {
+    interval: "1H", // Array of String % 1H
     pct_change: 0.086318, // Double (Percent Price)
-    normal_change: 24_131.6 // Double
+    nominal_change: 24_131.6 // Double
+}
+
+const DELTA_24H = {
+    interval: "24H", // Array of String % 24H
+    pct_change: 0.036318, // Double (Percent Price)
+    nominal_change: 24_144.6 // Double
+}
+
+const DELTA_7D = {
+    interval: "7D", // Array of String % 24H
+    pct_change: 0.036318, // Double (Percent Price)
+    nominal_change: 24_144.6 // Double
 }
 
 const QUOTES = {
     price: 24073.4, // Double
-    deltas: DELTA, // Array of  DELTA
-    market_cap: "454.96B", // Double
-    h24_volume: "34.17B", // Double
+    deltas: [DELTA_1H, DELTA_24H, DELTA_7D], // Array of  DELTA
+    market_cap: 460513164207, // Double
+    h24_volume: 27508459604, // Double
     last_update_timestamp: 1660598250101 // Integer
 }
 
