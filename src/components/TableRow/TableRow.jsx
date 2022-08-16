@@ -2,6 +2,7 @@ import React, { useCallback } from "react"
 import CoinImage from "../CoinImage/CoinImage"
 
 function TableRow({
+    type,
     name,
     price,
     urlImage,
@@ -19,20 +20,33 @@ function TableRow({
         <div className="flex items-center mb-2 pb-2 dark:border-gray-600 justify-between border-b">
             <div className="flex items-center w-full justify-around">
                 <div className="flex text-sm flex-col ml-2 items-start justify-between">
-                    <a
-                        href="#dashboard"
-                        onClick={handleClick}
-                        className="flex items-center"
-                    >
-                        <CoinImage
-                            urlImage={urlImage}
-                            alt={alt}
-                            ratioChange={true}
-                        />
-                        <p className="dark:text-white ml-1 text-lg">
-                            {name ? name : "Name"}
-                        </p>
-                    </a>
+                    {type !== "header" ? (
+                        <a
+                            href="#dashboard"
+                            onClick={handleClick}
+                            className="flex items-center"
+                        >
+                            <CoinImage
+                                urlImage={urlImage}
+                                alt={alt}
+                                ratioChange={true}
+                            />
+                            <p className="dark:text-white ml-1 text-lg">
+                                {name ? name : "Name"}
+                            </p>
+                        </a>
+                    ) : (
+                        <span className="flex items-center">
+                            <CoinImage
+                                urlImage={urlImage}
+                                alt={alt}
+                                ratioChange={true}
+                            />
+                            <p className="dark:text-white ml-1 text-lg">
+                                {name ? name : "Name"}
+                            </p>
+                        </span>
+                    )}
                 </div>
                 <div className="flex flex-col justify-center items-center">
                     <dd className="text-lg font-semibold text-gray-900 dark:text-white">
@@ -70,7 +84,7 @@ function TableRow({
                         {week && week.pct_change.toPrecision(2) + " %"}
                     </dd>
                 </div>
-                <div className="text-green-400">
+                <div className="text-green-400 text-md font-semibold">
                     {price
                         ? new Intl.NumberFormat().format(price) + " $"
                         : "Price"}

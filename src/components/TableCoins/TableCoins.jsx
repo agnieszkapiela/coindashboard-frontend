@@ -20,7 +20,7 @@ function TableCoins({ data, setCoinName }) {
                         />
                     </div>
                 </div>
-                <TableRow />
+                <TableRow type="header" />
                 <div className="overflow-y-scroll h-96 px-1">
                     <TableRow
                         name={COIN_INFO.name}
