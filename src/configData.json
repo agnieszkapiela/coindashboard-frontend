@@ -1,6 +1,7 @@
 {
-    "BASE_SERVER_URL": "SERVER URL",
-    "COINS_PATH": "/api/coins",
-    "CHART_PATH": "/chart",
-    "MARKETDATA_PATH": "/marketdata"
+    "BASE_SERVER_URL": "http://localhost:3001/",
+    "COINS_PATH": "api_coins",
+    "CHART_PATH": "api_coins_bitcoin_chart",
+    "MARKETDATA_PATH": "api_coins_bitcoin_marketdata",
+    "COINDETAILS_PATH": "api_coins_bitcoin"
 }

@@ -1,6 +1,3 @@
-import { useEffect, useState } from "react"
-import TableRow from "../TableRow/TableRow"
-import BtcImage from "../../img/bitcoin.png"
 import ListCoinInfoRow from "../ListCoinInfoRow/ListCoinInfoRow"
 
 function ListCoinInfo({ data }) {

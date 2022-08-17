@@ -49,11 +49,12 @@ function TableRow({
                     )}
                 </div>
                 <div className="flex flex-col justify-center items-center">
-                    <dd className="text-md md:text-lg font-semibold text-gray-900 dark:text-white">
+                    <dd className="text-sm md:text-lg font-semibold text-gray-900 dark:text-white">
                         {hour
-                            ? new Intl.NumberFormat().format(
+                            ? "$" +
+                              new Intl.NumberFormat().format(
                                   hour.nominal_change
-                              ) + "$"
+                              )
                             : "1 Hour"}
                     </dd>
                     <dd className="text-gray-500 font-semibold text-sm sm:text-md md:text-lg">
@@ -61,11 +62,10 @@ function TableRow({
                     </dd>
                 </div>
                 <div className="flex flex-col justify-center items-center">
-                    <dd className=" text-md md:text-lg font-semibold text-gray-900 dark:text-white">
+                    <dd className=" text-sm md:text-lg font-semibold text-gray-900 dark:text-white">
                         {day
-                            ? new Intl.NumberFormat().format(
-                                  day.nominal_change
-                              ) + "$"
+                            ? "$" +
+                              new Intl.NumberFormat().format(day.nominal_change)
                             : "1 Day"}
                     </dd>
                     <dd className="text-gray-500 font-semibold text-sm sm:text-md md:text-lg">
@@ -73,11 +73,12 @@ function TableRow({
                     </dd>
                 </div>
                 <div className="flex flex-col justify-center items-center">
-                    <dd className="text-md md:text-lg font-semibold text-gray-900 dark:text-white">
+                    <dd className="text-sm md:text-lg font-semibold text-gray-900 dark:text-white">
                         {week
-                            ? new Intl.NumberFormat().format(
+                            ? "$" +
+                              new Intl.NumberFormat().format(
                                   week.nominal_change
-                              ) + "$"
+                              )
                             : "1 Week"}
                     </dd>
                     <dd className="text-gray-500 font-semibold text-sm sm:text-md md:text-lg">
@@ -86,7 +87,7 @@ function TableRow({
                 </div>
                 <div className="text-green-400 text-md font-semibold">
                     {price
-                        ? new Intl.NumberFormat().format(price) + "$"
+                        ? "$" + new Intl.NumberFormat().format(price)
                         : "Price"}
                 </div>
             </div>

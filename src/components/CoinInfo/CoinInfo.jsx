@@ -1,12 +1,7 @@
 import React from "react"
-import configData from "../../configData.json"
 import CoinImage from "../CoinImage/CoinImage"
 
 function CoinInfo({ data }) {
-    // const [status, loader, data] = useFetchDataApi(
-    //     configData.COINS_PATH + "/" + name
-    // )
-
     return (
         <div className="flex flex-col justify-center items-center border dark:border-gray-600 bg-white dark:bg-gray-800 p-4">
             <div className="flex-row gap-4 flex justify-center items-center">

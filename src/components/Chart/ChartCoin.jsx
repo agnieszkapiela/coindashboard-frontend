@@ -1,7 +1,6 @@
 import React from "react"
 import { Line } from "react-chartjs-2"
 import Chart from "chart.js/auto"
-import configData from "../../configData.json"
 
 function getChartTime(data, i) {
     const arr = []

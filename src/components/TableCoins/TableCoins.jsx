@@ -1,9 +1,13 @@
-import { useEffect, useState } from "react"
 import TableRow from "../TableRow/TableRow"
-import { COIN_INFO } from "../../data"
+import configData from "../../configData.json"
+import useFetchDataApi from "../../customizedhooks/useFetchDataApi"
 
 function TableCoins({ setCoinName }) {
     // Do our API call using ----- /api/coins
+    const [statusCoins, loaderCoins, coins] = useFetchDataApi(
+        configData.COINS_PATH
+    )
+
     return (
         <div id="listCoins" className="mt-2 pt-2 h-screen">
             <div className="border dark:border-gray-600 h-4/5 w-full p-4 bg-white dark:bg-gray-800 relative overflow-hidden">
@@ -23,17 +27,29 @@ function TableCoins({ setCoinName }) {
                 </div>
                 <TableRow type="header" />
                 <div className="overflow-y-scroll h-96 px-1">
-                    <TableRow
-                        name={COIN_INFO.name}
-                        price={COIN_INFO.current_quote.price}
-                        token={false}
-                        urlImage={COIN_INFO.image_url}
-                        alt={COIN_INFO.symbol}
-                        hour={COIN_INFO.current_quote.deltas[0]}
-                        day={COIN_INFO.current_quote.deltas[1]}
-                        week={COIN_INFO.current_quote.deltas[2]}
-                        setCoinName={setCoinName}
-                    />
+                    {!loaderCoins ? (
+                        statusCoins !== 200 ? (
+                            <h1>MESSAGE: {statusCoins}</h1>
+                        ) : (
+                            coins.map((coin, index) => {
+                                return (
+                                    <TableRow
+                                        key={index}
+                                        name={coin.name}
+                                        price={coin.current_quote.price}
+                                        urlImage={coin.image_url}
+                                        alt={coin.symbol}
+                                        hour={coin.current_quote.deltas[0]}
+                                        day={coin.current_quote.deltas[1]}
+                                        week={coin.current_quote.deltas[2]}
+                                        setCoinName={setCoinName}
+                                    />
+                                )
+                            })
+                        )
+                    ) : (
+                        <h1>LOADING.....</h1>
+                    )}
                 </div>
             </div>
         </div>
