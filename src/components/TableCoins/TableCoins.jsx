@@ -2,7 +2,8 @@ import { useEffect, useState } from "react"
 import TableRow from "../TableRow/TableRow"
 import { COIN_INFO } from "../../data"
 
-function TableCoins({ data, setCoinName }) {
+function TableCoins({ setCoinName }) {
+    // Do our API call using ----- /api/coins
     return (
         <div id="listCoins" className="mt-2 pt-2 h-screen">
             <div className="border dark:border-gray-600 h-4/5 w-full p-4 bg-white dark:bg-gray-800 relative overflow-hidden">

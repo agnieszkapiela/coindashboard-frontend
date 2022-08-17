@@ -31,7 +31,7 @@ function TableRow({
                                 alt={alt}
                                 ratioChange={true}
                             />
-                            <p className="dark:text-white ml-1 text-lg">
+                            <p className="dark:text-white ml-1 text-md md:text-lg">
                                 {name ? name : "Name"}
                             </p>
                         </a>
@@ -42,51 +42,51 @@ function TableRow({
                                 alt={alt}
                                 ratioChange={true}
                             />
-                            <p className="dark:text-white ml-1 text-lg">
+                            <p className="dark:text-white ml-1 text-md md:text-lg">
                                 {name ? name : "Name"}
                             </p>
                         </span>
                     )}
                 </div>
                 <div className="flex flex-col justify-center items-center">
-                    <dd className="text-lg font-semibold text-gray-900 dark:text-white">
+                    <dd className="text-md md:text-lg font-semibold text-gray-900 dark:text-white">
                         {hour
                             ? new Intl.NumberFormat().format(
                                   hour.nominal_change
-                              ) + " $"
+                              ) + "$"
                             : "1 Hour"}
                     </dd>
-                    <dd className="text-gray-500 font-semibold text-md">
+                    <dd className="text-gray-500 font-semibold text-sm sm:text-md md:text-lg">
                         {hour && hour.pct_change.toPrecision(2) + " %"}
                     </dd>
                 </div>
                 <div className="flex flex-col justify-center items-center">
-                    <dd className="text-lg font-semibold text-gray-900 dark:text-white">
+                    <dd className=" text-md md:text-lg font-semibold text-gray-900 dark:text-white">
                         {day
                             ? new Intl.NumberFormat().format(
                                   day.nominal_change
-                              ) + " $"
+                              ) + "$"
                             : "1 Day"}
                     </dd>
-                    <dd className="text-gray-500 font-semibold text-md">
-                        {day && day.pct_change.toPrecision(2) + " %"}
+                    <dd className="text-gray-500 font-semibold text-sm sm:text-md md:text-lg">
+                        {day && day.pct_change.toPrecision(2) + "%"}
                     </dd>
                 </div>
                 <div className="flex flex-col justify-center items-center">
-                    <dd className="text-lg font-semibold text-gray-900 dark:text-white">
+                    <dd className="text-md md:text-lg font-semibold text-gray-900 dark:text-white">
                         {week
                             ? new Intl.NumberFormat().format(
                                   week.nominal_change
-                              ) + " $"
+                              ) + "$"
                             : "1 Week"}
                     </dd>
-                    <dd className="text-gray-500 font-semibold text-md">
-                        {week && week.pct_change.toPrecision(2) + " %"}
+                    <dd className="text-gray-500 font-semibold text-sm sm:text-md md:text-lg">
+                        {week && week.pct_change.toPrecision(2) + "%"}
                     </dd>
                 </div>
                 <div className="text-green-400 text-md font-semibold">
                     {price
-                        ? new Intl.NumberFormat().format(price) + " $"
+                        ? new Intl.NumberFormat().format(price) + "$"
                         : "Price"}
                 </div>
             </div>

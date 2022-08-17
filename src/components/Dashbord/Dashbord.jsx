@@ -14,9 +14,9 @@ function Dashbord({ coinName }) {
     return (
         <main
             id="dashboard"
-            className="pt-4 px-2 grid grid-cols-3 gap-2 h-full dark:bg-gray-800 dark:text-white"
+            className="pt-4 px-2 grid md:grid-cols-3 gap-2 grid-cols-1 h-full dark:bg-gray-800 dark:text-white"
         >
-            <div className="col-span-2">
+            <div className="md:col-span-2 col-span-1">
                 <CoinMarketData
                     data={COIN_MARKET_DATA}
                     urlImage={COIN_DETAILS.image_url}

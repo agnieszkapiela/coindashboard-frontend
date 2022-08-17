@@ -2,7 +2,6 @@ import React from "react"
 import TableCoins from "../TableCoins/TableCoins"
 
 function Home({ setCoinName }) {
-    // Do our API call using ----- /api/coins
     return (
         <div>
             <div className="bg-white dark:bg-gray-800">
