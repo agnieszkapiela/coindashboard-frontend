@@ -58,9 +58,14 @@ function TableRow({
                               )
                             : "1 Hour"}
                     </dd>
-                    <dd className="text-gray-500 font-semibold text-xs sm:text-md md:text-lg">
+                    {(hour && hour.pct_change.toPrecision(2)) >= 0 ?
+                    <dd className="text-green-500 font-semibold text-md">
                         {hour && hour.pct_change.toPrecision(2) + " %"}
                     </dd>
+                    : <dd className="text-red-500 font-semibold text-md">
+                    {hour && hour.pct_change.toPrecision(2) + " %"}
+                    </dd>
+                    }
                 </div>
                 <div className="flex flex-col justify-center items-center w-1/5">
                     <dd className="text-xs md:text-lg font-semibold text-gray-900 dark:text-white">
@@ -69,9 +74,14 @@ function TableRow({
                               new Intl.NumberFormat().format(day.nominal_change)
                             : "1 Day"}
                     </dd>
-                    <dd className="text-gray-500 font-semibold text-xs sm:text-md md:text-lg">
-                        {day && day.pct_change.toPrecision(2) + "%"}
+                    {(day && day.pct_change.toPrecision(2)) >= 0 ?
+                    <dd className="text-green-500 font-semibold text-md">
+                        {day && day.pct_change.toPrecision(2) + " %"}
                     </dd>
+                    : <dd className="text-red-500 font-semibold text-md">
+                    {day && day.pct_change.toPrecision(2) + " %"}
+                    </dd>
+                    }
                 </div>
                 <div className="flex flex-col justify-center items-center w-1/5">
                     <dd className="text-xs md:text-lg font-semibold text-gray-900 dark:text-white">
@@ -82,9 +92,14 @@ function TableRow({
                               )
                             : "1 Week"}
                     </dd>
-                    <dd className="text-gray-500 font-semibold text-xs sm:text-md md:text-lg">
-                        {week && week.pct_change.toPrecision(2) + "%"}
+                    {(week && week.pct_change.toPrecision(2)) >= 0 ?
+                    <dd className="text-green-500 font-semibold text-md">
+                        {week && week.pct_change.toPrecision(2) + " %"}
                     </dd>
+                    : <dd className="text-red-500 font-semibold text-md">
+                    {week && week.pct_change.toPrecision(2) + " %"}
+                    </dd>
+                    }
                 </div>
                 {/* <div className="flex flex-col justify-center items-center">
                     <dd className="text-xs md:text-lg font-semibold text-gray-900 dark:text-white">
@@ -95,9 +110,14 @@ function TableRow({
                               )
                             : "1 Month"}
                     </dd>
-                    <dd className="text-gray-500 font-semibold text-xs sm:text-md md:text-lg">
-                        {month && month.pct_change.toPrecision(2) + "%"}
+                    {(month && month.pct_change.toPrecision(2).toPrecision(2)) >= 0 ?
+                    <dd className="text-green-500 font-semibold text-md">
+                        {month && month.pct_change.toPrecision(2).toPrecision(2) + " %"}
                     </dd>
+                    : <dd className="text-red-500 font-semibold text-md">
+                    {month && month.pct_change.toPrecision(2) + " %"}
+                    </dd>
+                    }
                 </div> */}
                 <div className="text-green-400 text-sm md:text-md font-semibold w-1/5">
                     {price

@@ -110,7 +110,9 @@ function TableCoins({ setCoinName }) {
                             </InfiniteScroll>
                         )
                     ) : (
-                        <h1>LOADING.....</h1>
+                        <div className = "w-full h-5/6 flex justify-center intem center">
+                        <h1><ThreeDots color="#00BFFF" height={150} width={150} /></h1>
+                        </div>
                     )}
                 </div>
             </div>
