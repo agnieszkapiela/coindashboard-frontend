@@ -58,7 +58,7 @@ function Dashbord({ coinName }) {
                         <CoinInfo data={coinInfo} />
                     )
                 ) : (
-                    <h1>LOADING....</h1>
+                    <h1>LOADING...</h1>
                 )}
                 <ListCoinInfo />
             </div>
