@@ -132,6 +132,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -140,7 +145,7 @@
       }
     },
     {
-      "name": "Bitcoin",
+      "name": "Binance Coin",
       "symbol": "BTC",
       "image_url": "https://cryptologos.cc/logos/bitcoin-btc-logo.png",
       "current_quote": {
@@ -160,6 +165,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -168,7 +178,7 @@
       }
     },
     {
-      "name": "Bitcoin2",
+      "name": "Lido Staked Ether",
       "symbol": "BTC",
       "image_url": "https://cryptologos.cc/logos/bitcoin-btc-logo.png",
       "current_quote": {
@@ -188,6 +198,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -196,7 +211,7 @@
       }
     },
     {
-      "name": "Bitcoin3",
+      "name": "Decentraland",
       "symbol": "BTC",
       "image_url": "https://cryptologos.cc/logos/bitcoin-btc-logo.png",
       "current_quote": {
@@ -216,6 +231,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -244,6 +264,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -272,6 +297,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -300,6 +330,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -328,6 +363,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -356,6 +396,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -384,6 +429,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -412,6 +462,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -440,6 +495,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -468,6 +528,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -496,6 +561,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -524,6 +594,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -552,6 +627,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -580,6 +660,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -608,6 +693,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -636,6 +726,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -664,6 +759,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -692,6 +792,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -720,6 +825,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -748,6 +858,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,
@@ -776,6 +891,11 @@
             "interval": "7D",
             "pct_change": 0.036318,
             "nominal_change": 24144.6
+          },
+          {
+            "interval": "THIRTY_DAY",
+            "pct_change": 12.552752825351243,
+            "nominal_change": 2613.986893569027
           }
         ],
         "market_cap": 460513164207,

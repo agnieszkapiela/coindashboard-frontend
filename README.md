@@ -27,6 +27,15 @@ v16.16.0
 ```bash
 > cd coindashboard-frontend
 > npm install
+
+```
+
+### Install dependencies for developpment purposes
+
+```bash
+> cd coindashboard-frontend
+> npm install json-server
+
 ```
 
 ### run The local JSON server and the react Application

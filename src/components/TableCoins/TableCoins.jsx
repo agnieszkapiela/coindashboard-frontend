@@ -24,7 +24,7 @@ function TableCoins({ setCoinName }) {
                 const data = await axiosClient.get(configData.COINS_PATH, {
                     params: {
                         _page: 1,
-                        _limit: 6
+                        _limit: 10
                     }
                 })
                 setItems(data.data)
@@ -42,11 +42,11 @@ function TableCoins({ setCoinName }) {
             const data = await axiosClient.get(configData.COINS_PATH, {
                 params: {
                     _page: page,
-                    _limit: 6
+                    _limit: 10
                 }
             })
             setItems([...items, ...data.data])
-            if (data.data.length < 6 || data.data.length === 0) {
+            if (data.data.length < 10 || data.data.length === 0) {
                 setHasMore(false)
             } else {
                 setPage(page + 1)
